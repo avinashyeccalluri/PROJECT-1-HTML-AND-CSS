@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
 a {
     text-decoration: none;
 }
@@ -11,11 +16,13 @@ a {
 #header {
     padding-top: 10px;
     margin-bottom: 10px;
+    position: relative;
+    /* display: flex; */
 }
 
 #header .heading {
     float: left;
-    padding-left: 120px;
+    /* padding-left: 65px; */
     margin-right: 200px;
 }
 
@@ -29,19 +36,19 @@ a {
     display: inline;
 }
 
-#header .nav_bar {
-    padding-top: 5px;
-}
-
 #header li a {
     text-decoration: none;
-    padding-left: 50px;
+    padding-left: 25px;
     font-family: "Montserrat", sans-serif;
     color: black;
 }
 
+#header .nav_bar {
+    padding-top: 5px;
+}
+
 #heading .green_button {
-    float: right;
+    color: white;
 }
 
 #header .heading {
@@ -58,19 +65,19 @@ a {
 }
 
 #center_body {
-    width: 100%;
-    height: 300px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../IMG/activity-asian-people-boys-children-1153976.jpg") no-repeat center center/cover;
+    width: 100% !important;
+    height: 300px !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../IMG/activity-asian-people-boys-children-1153976.jpg") no-repeat center center/cover !important;
 }
 
 #center_body .main_heading {
     width: 40%;
     padding: 60px;
     padding-top: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     font-family: "Montserrat", sans-serif;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
     /* position: relative; */
 }
@@ -132,21 +139,24 @@ a {
     font-family: "Roboto", sans-serif;
 }
 
+#center_body_tiles .tile_content{
+    padding: 0px 10px 0px 10px;
+}
+
 #center_body_tiles .total_title .tile_text .tile_content {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
     font-size: smaller;
 }
 
 #center_body_tiles .total_title .tile_text .tile_heading {
-    padding-top: 10px;
-    font-size: 1em;
+    /* padding-top: 10px; */
+    font-size: 1.3em;
     font-weight: bolder;
 }
 
 #center_body_tiles .total_title .tile_text a {
     color: green;
-    padding-top: 20px;
+    font-size: 0.8em;
 }
 
 
