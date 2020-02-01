@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 #header {
     padding-top: 10px;
     margin-bottom: 10px;
@@ -11,7 +15,7 @@
 
 #header .heading {
     float: left;
-    padding-left: 30px;
+    padding-left: 120px;
     margin-right: 200px;
 }
 
@@ -56,7 +60,7 @@
 #center_body {
     width: 100%;
     height: 300px;
-    background: url("../IMG/activity-asian-people-boys-children-1153976.jpg") no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../IMG/activity-asian-people-boys-children-1153976.jpg") no-repeat center center/cover;
 }
 
 #center_body .main_heading {
@@ -74,6 +78,12 @@
 #center_body .transparent_button {
     margin-left: 60px;
     margin-right: 30px;
+    height: 30px;
+    background: none;
+    width: 130px;
+    border: whitesmoke solid 2px;
+    color: white;
+    /* border-width: 1px; */
 }
 
 #center_body .green_button {
@@ -83,24 +93,61 @@
     height: 30px;
     width: 180px;
     font-weight: bolder;
+    /* margin-right: 100px; */
 }
 
 .clr {
     clear: both;
+    padding-top: 100px;
 }
 
 .positioning {
     position: relative;
 }
 
-#center_body_tiles .body_tiles {
-    height: 250px;
-    width: 18%;
-    background: red;
-    margin: 20px;
-    float: left;
-    margin-left: 130px;
-    position: relative;
-    top: -55px;
-    border-radius: 1%;
+#center_body_tiles {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
+
+#center_body_tiles .total_title {
+    height: 250px;
+    width: 250px;
+    background: white;
+    position: relative;
+    top: -30px;
+    -moz-box-shadow: 0 0 15px black;
+    -webkit-box-shadow: 0 0 15px black;
+    box-shadow: 0 0 15px black;
+}
+
+#center_body_tiles .total_title .tile_image {
+    height: 50%;
+    background: url("../IMG/robina-weermeijer-igwG8aIaypo-unsplash.jpg") no-repeat center center/cover;
+}
+
+#center_body_tiles .total_title .tile_text {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+#center_body_tiles .total_title .tile_text .tile_content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: smaller;
+}
+
+#center_body_tiles .total_title .tile_text .tile_heading {
+    padding-top: 10px;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+#center_body_tiles .total_title .tile_text a {
+    color: green;
+    padding-top: 20px;
+}
+
+
+/* font-family: "Montserrat", sans-serif; */
