@@ -217,3 +217,39 @@ a {
     margin: 20px 50px 20px 50px;
 }
 
+ #third_page .people_served_tab{
+    width: 35%;
+    height: 350px;
+    background: #4bdb7b;
+    font-size: 2em;
+    padding: 20px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*
+#third_page .people_served_tab .black_bold{
+    font-size: 3em;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+#third_page .people_served_tab .white_button{
+    margin-top: 30px;
+    margin-left: 20px;
+    height: 40px;
+    width: 300px;
+    oz-box-shadow: 0 0 10px black;
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+}
+
+#third_page .who_we_are{
+    margin-left: 30px;
+    height: 350px;
+    width: 60%;
+    background: red;
+} */
+
+
+
