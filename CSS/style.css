@@ -21,13 +21,13 @@ a {
 
 #header .heading {
     float: left;
-    margin-right: 200px;
+    margin-right: 100px;
 }
 
 #header ul {
     list-style: none;
     float: left;
-    margin-right: 300px;
+    margin-right: 190px;
     /* color: black; */
 }
 
@@ -42,6 +42,17 @@ a {
     padding-left: 25px;
     font-family: "Montserrat", sans-serif;
     color: black;
+}
+
+#header li a:hover {
+    text-decoration: none;
+    padding-left: 25px;
+    font-family: "Montserrat", sans-serif;
+    color: #4bdb7b;
+}
+
+#header li a:last-child{
+    margin-right: 20px;
 }
 
 #header .nav_bar {
