@@ -46,6 +46,7 @@ a {
     padding-left: 25px;
     font-family: "Montserrat", sans-serif;
     color: black;
+    padding-bottom: 25px;
 }
 
 #header .hover_headings:hover {
@@ -73,6 +74,7 @@ a {
     
 }
 .dropdown_content{
+    margin-top: 10px;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -81,8 +83,8 @@ a {
     padding: 6px 16px;
     z-index: 1;
     border-top: 4px solid #4bdb7b;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 .dropdown:hover .dropdown_content{
