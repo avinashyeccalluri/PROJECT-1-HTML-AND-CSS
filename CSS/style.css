@@ -6,6 +6,7 @@
 
 html {
     font-size: 10px;
+    /* width: 100vw; */
 }
 * {
     margin: 0px;
@@ -30,8 +31,8 @@ li {
 
 body {
     width: 100vw;
+    max-width: 100%;
     font-family: "Montserrat", sans-serif;
-    overflow-x: hidden;
 }
 section {
     width: 100%;
@@ -416,7 +417,7 @@ section.served_over {
 .served_over-big-right {
     background-color: white;
     flex: 7;
-    margin-left: 5em;
+    margin-left: 8em;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -455,12 +456,26 @@ section.served_over {
 .served_over-small {
     display: flex;
     flex: 1;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .served_over-small-icon_link {
-    border: 4px solid yellowgreen;
-    width: 300px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.served_over-small-icon_link .card_image {
+    padding: 2rem;
+}
+.served_over-small-icon_link img {
+    width: 200px;
     height: 200px;
+    object-fit: cover;
+}
+.served_over-small-icon_link .card_title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* SECTION - N-1 */
@@ -503,8 +518,10 @@ section.served_over {
 
 /* SECTION - SUBSCRIPTION */
 section.subscription {
+    width: 100%;
 }
 .subscription-h {
+    /* padding: auto; */
     background-image: linear-gradient(
             rgba(231, 224, 224, 0.534),
             rgba(218, 218, 218, 0.767)
@@ -513,7 +530,6 @@ section.subscription {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: scroll;
 }
 .subscription-h h2 {
     font-size: 5em;
@@ -535,33 +551,34 @@ section.subscription {
 }
 
 .subscription-form_container {
-    background-color: orange;
     padding-top: 3%;
     padding-bottom: 3%;
 }
 .subscription-form_container form {
-    background-color: pink;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .subscription-form_container form .inputs {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    /* width: 82em; */
 }
 .subscription-form_container form .inputs input {
-    font-size: 3em;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
     border: none;
-    border-bottom: 2px solid black;
-    padding: 10px 0;
-    /* width: 820px; */
+    border-bottom: 1px solid black;
+    padding: 0 0 5px 5px;
     margin-bottom: 20px;
-    height: 70px;
+}
+.subscription-form_container form .inputs input:first-of-type {
+    width: 30rem;
+}
+.subscription-form_container form .inputs input:last-of-type {
+    width: 60rem;
 }
 .subscription-form_container form .inputs input::placeholder {
-    /* font-size: 1.8em; */
+    font-size: 1.8rem;
     font-family: "Montserrat", sans-serif;
 }
 
