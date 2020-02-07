@@ -26,7 +26,7 @@ li {
     list-style-type: none;
 }
 .page_padding {
-    padding: 0 15%;
+    padding: 0 10%;
 }
 
 body {
@@ -45,6 +45,7 @@ section {
 }
 
 #header .heading {
+    padding-top: 5.5px;
     float: left;
     margin-right: 100px;
 }
@@ -52,6 +53,7 @@ section {
 #header .nav_bar {
     float: left;
     margin-left: 95px;
+    font-size: 1.8rem;
 }
 
 #header li {
@@ -125,6 +127,7 @@ section {
 
 #header .heading {
     font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
 }
 
 #header .green_button {
@@ -237,7 +240,7 @@ section {
 
 #center_body_tiles .total_title .tile_text .tile_heading {
     padding-top: 10px;
-    font-size: 1.3em;
+    font-size: 2rem;
     font-weight: bolder;
 }
 
@@ -290,13 +293,18 @@ section {
     background: red;
 }
 
-#second_page .our_gallery .one,
+/* .our_gallery{
+    height: 300px;
+    width: 20px;
+} */
+
+/* #second_page .our_gallery .one,
 #second_page .our_gallery .two {
     display: flex;
     justify-content: space-between;
-}
+} */
 
-#second_page .our_gallery .one_row {
+/* #second_page .our_gallery .one_row {
     height: 200px;
     width: 300px;
     background: red;
@@ -305,7 +313,7 @@ section {
     -webkit-box-shadow: 0 0 15px black;
     box-shadow: 0 0 15px black;
     cursor: pointer;
-}
+} */
 
 #second_page .two_footer {
     text-align: center;
@@ -336,7 +344,6 @@ section {
     margin-left: 20px;
     height: 40px;
     width: 300px;
-    oz-box-shadow: 0 0 10px black;
     -webkit-box-shadow: 0 0 10px black;
     box-shadow: 0 0 10px black;
 }
