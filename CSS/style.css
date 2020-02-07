@@ -509,8 +509,8 @@ section.served_over {
     width: 300px;
     height: 200px;
     background-color: orange;
-    flex: 1 0 500px;
-    margin: 2em 1em;
+    /* flex: 2 0 500px; */
+    margin: 2em 0.5em;
 }
 
 /* SECTION - SUBSCRIPTION */
