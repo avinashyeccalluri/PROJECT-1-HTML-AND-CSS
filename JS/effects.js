@@ -29,6 +29,8 @@ function carousel() {
         theImg.setAttribute("alt", "hmmm");
         theImg.setAttribute("class", "the_image");
         imgContainer.appendChild(theImg);
+        imgContainer.appendChild(theImg).style. linear-gradient(
+            rgba(231, 224, 224, 0.534);
 
         if (myIndex >= imgArr.length) {
             myIndex = 0;
