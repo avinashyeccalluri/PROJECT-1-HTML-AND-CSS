@@ -32,6 +32,7 @@ body {
     width: 100vw;
     max-width: 100%;
     font-family: "Montserrat", sans-serif;
+    background-color: #fdfdfb;
 }
 section {
     width: 100%;
@@ -104,6 +105,7 @@ section {
     border-top: 4px solid #ff7e67;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    /* height: 400px; */
 }
 .dropdown:hover .dropdown_content {
     display: block;
@@ -272,7 +274,7 @@ section {
 #second_page {
     /* background: rgb(236, 236, 236); */
     /* border-radius: 4px; */
-    background-color: orange;
+    /* background-color: orange; */
 }
 .top {
     padding-top: 3rem;
@@ -604,5 +606,37 @@ footer .nav_links li a:not(.nav_links-last)::after {
     display: flex;
 }
 .left_navbar {
-    width: 35%;
+    width: 40%;
 }
+.navbar_spacing{
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.contents{
+    margin: 0 50px;
+    letter-spacing: 1px;    
+    line-height: 2.5rem;
+}
+
+.contents p,
+.contents li{
+    font-size: 1.5rem;
+    margin-bottom: 40px 0;
+}
+.contents .topics{
+    font-size: 4rem;
+    margin:10px 0px;
+}
+
+.contents .kidney{
+    font-size: 5rem;
+    margin:20px 0px;
+}
+
+.contents li{
+    /* list-style: square; */
+    padding: 0px 20px;
+}
+
+ 
