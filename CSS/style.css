@@ -40,43 +40,44 @@ section {
 /* CONTENT START */
 
 /* HEADER */
-#header {
+header {
     padding-top: 10px;
     margin-bottom: 10px;
     position: relative;
 }
-#header .heading {
-    padding-top: 5.5px;
-    float: left;
-    margin-right: 100px;
+header .heading {
+    /* padding-top: 5.5px; */
+    /* float: left; */
+    /* margin-right: 100px; */
 }
-#header .nav_bar {
+header .nav_bar {
     float: left;
-    margin-left: 95px;
+    /* margin-left: 95px; */
     font-size: 1.8rem;
 }
-#header li {
+header li {
     display: inline;
     color: black;
 }
-#header .dropdown_content {
+header .dropdown_content {
     padding: 10px;
     margin-top: 10px;
 }
-#header .hover_headings {
+header .hover_headings {
     padding-left: 25px;
     font-family: "Montserrat", sans-serif;
     color: black;
-    padding-bottom: 45px;
+    /* padding-bottom: 45px; */
     font-weight: 600;
 }
-#header .hover_headings:hover {
+header .hover_headings:hover {
     padding-left: 25px;
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
     color: #4bdb7b;
 }
 .hover_links {
+    margin-bottom: 100px;
     color: black;
     font-weight: 500;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -109,21 +110,21 @@ section {
     display: block;
     width: 120px;
 }
-#header .nav_bar {
+header .nav_bar {
     padding-top: 5px;
 }
-#heading .green_button {
+header .green_button {
     cursor: pointer;
     color: white;
 }
-#header .heading {
+header .heading {
     font-family: "Open Sans", sans-serif;
     font-size: 2rem;
 }
-#header .green_button {
+header .green_button {
     cursor: pointer;
     background: #4bdb7b;
-    margin-left: 150px;
+    /* margin-left: 150px; */
     border: none;
     color: white;
     height: 30px;
@@ -131,11 +132,16 @@ section {
     font-weight: bolder;
 }
 
+header .page_padding {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* FIRST PAGE */
 .positioning {
-    width: 100%;
+    /* width: 100%; */
     position: relative;
-    height: 75vh;
+    /* height: 75vh; */
     /* overflow: hidden; */
     /* background-color: pink; */
     /* background-image: linear-gradient(
@@ -147,24 +153,28 @@ section {
 }
 
 #center_body {
-    width: 100%;
-    height: 100%;
-    /* border: 2px solid orange; */
 }
 .image_container {
-    width: 100%;
     height: 75vh;
-    /* border: 2px solid red; */
     background-image: linear-gradient(
-            0deg,
-            rgba(26, 26, 26, 0.938),
-            rgba(53, 53, 53, 0.836)
-        ),
-        url("../IMG/activity-asian-people-boys-children-1153976.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 -250px;
-    /* z-index: -1; */
+        0deg,
+        rgba(25, 25, 25, 0.3),
+        rgba(10, 10, 10, 0.2)
+    );
+    overflow: hidden;
+    position: relative;
+}
+.image_container img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -150px;
+    z-index: -1;
+    animation-name: fadeinthing;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate;
 }
 .images_over_content {
     height: 100%;
@@ -272,7 +282,7 @@ section {
 #second_page {
     /* background: rgb(236, 236, 236); */
     /* border-radius: 4px; */
-    background-color: orange;
+    /* background-color: orange; */
 }
 .top {
     padding-top: 3rem;
@@ -605,4 +615,25 @@ footer .nav_links li a:not(.nav_links-last)::after {
 }
 .left_navbar {
     width: 35%;
+}
+
+.the_image {
+}
+
+@keyframes fadeinthing {
+    0% {
+        opacity: 0.5;
+    }
+    25% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.5;
+    }
 }
