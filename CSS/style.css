@@ -37,47 +37,52 @@ body {
 section {
     width: 100%;
 }
+input[type="button"],
+button,
+input {
+    font-family: "Montserrat", sans-serif;
+}
 /* COMMON DECLARATIONS END */
 /* CONTENT START */
 
 /* HEADER */
-#header {
-    padding-top: 10px;
-    margin-bottom: 10px;
+header {
+    padding: 1.5rem;
+    /* margin-bottom: 10px; */
     position: relative;
 }
-#header .heading {
-    padding-top: 5.5px;
-    float: left;
-    margin-right: 100px;
+header .heading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
 }
-#header .nav_bar {
+header .nav_bar {
     float: left;
-    margin-left: 95px;
+    /* margin-left: 95px; */
     font-size: 1.8rem;
 }
-#header li {
+header li {
     display: inline;
     color: black;
 }
-#header .dropdown_content {
+header .dropdown_content {
     padding: 10px;
     margin-top: 10px;
 }
-#header .hover_headings {
+header .hover_headings {
     padding-left: 25px;
     font-family: "Montserrat", sans-serif;
     color: black;
-    padding-bottom: 45px;
+    /* padding-bottom: 45px; */
     font-weight: 600;
 }
-#header .hover_headings:hover {
+header .hover_headings:hover {
     padding-left: 25px;
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
     color: #4bdb7b;
 }
 .hover_links {
+    margin-bottom: 100px;
     color: black;
     font-weight: 500;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -111,33 +116,31 @@ section {
     display: block;
     width: 120px;
 }
-#header .nav_bar {
-    padding-top: 5px;
+header .nav_bar {
+    /* padding-top: 5px; */
 }
-#heading .green_button {
+header .green_button {
     cursor: pointer;
     color: white;
-}
-#header .heading {
-    font-family: "Open Sans", sans-serif;
-    font-size: 2rem;
-}
-#header .green_button {
-    cursor: pointer;
-    background: #4bdb7b;
-    margin-left: 150px;
+    background: #18b64d;
     border: none;
-    color: white;
-    height: 30px;
-    width: 120px;
-    font-weight: bolder;
+    padding: 1rem 3rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+
+header .page_padding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* FIRST PAGE */
 .positioning {
-    width: 100%;
+    /* width: 100%; */
     position: relative;
-    height: 75vh;
+    /* height: 75vh; */
     /* overflow: hidden; */
     /* background-color: pink; */
     /* background-image: linear-gradient(
@@ -149,41 +152,42 @@ section {
 }
 
 #center_body {
-    width: 100%;
-    height: 100%;
-    /* border: 2px solid orange; */
 }
 .image_container {
-    width: 100%;
     height: 75vh;
-    /* border: 2px solid red; */
     background-image: linear-gradient(
-            0deg,
-            rgba(26, 26, 26, 0.938),
-            rgba(53, 53, 53, 0.836)
-        ),
-        url("../IMG/activity-asian-people-boys-children-1153976.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 -250px;
-    /* z-index: -1; */
+        0deg,
+        rgba(25, 25, 25, 0.2),
+        rgba(10, 10, 10, 0.1)
+    );
+    overflow: hidden;
+    position: relative;
 }
-.images_over_content {
-    height: 100%;
+.image_container img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -150px;
+    z-index: -1;
+    animation-name: fadeinthing;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate;
 }
 #center_body .main_heading {
-    width: 50%;
+    width: 40%;
     /* height: 100%; */
     /* padding: 60px; */
-    padding-top: 30px;
-    padding-bottom: 20px;
-    font-family: "Montserrat", sans-serif;
+    /* padding-top: 30px; */
+    /* padding-bottom: 20px; */
+    /* font-family: "Montserrat", sans-serif; */
     font-weight: bolder;
-    font-size: 35px;
-    color: white;
+    font-size: 6rem;
+    color: whitesmoke;
     position: absolute;
-    top: 0;
-    /* z-index: 1; */
+    top: 50px;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 1);
 }
 
 #center_body .transparent_button {
@@ -358,7 +362,7 @@ section.served_over {
     background-color: #4bdb7b;
     flex: 4;
     min-height: 400px;
-    font-size: 4.6em;
+    font-size: 4.5rem;
     color: #fdfdfd;
     padding: 0.5em;
     text-transform: uppercase;
@@ -481,8 +485,8 @@ section.subscription {
 }
 .subscription-h {
     background-image: linear-gradient(
-            rgba(231, 224, 224, 0.534),
-            rgba(218, 218, 218, 0.767)
+            rgba(255, 255, 255, 0.507),
+            rgba(63, 62, 62, 0.253)
         ),
         url("../IMG/bg/sub_head_bg.jpg");
     background-repeat: no-repeat;
@@ -605,38 +609,58 @@ footer .nav_links li a:not(.nav_links-last)::after {
 .contents_container {
     display: flex;
 }
+
 .left_navbar {
     width: 40%;
 }
-.navbar_spacing{
+.navbar_spacing {
     padding-left: 20px;
     font-size: 13px;
 }
 
-.contents{
+.contents {
     margin: 0 50px;
-    letter-spacing: 1px;    
+    letter-spacing: 1px;
     line-height: 2.5rem;
 }
 
 .contents p,
-.contents li{
+.contents li {
     font-size: 1.5rem;
     margin-bottom: 40px 0;
 }
-.contents .topics{
+.contents .topics {
     font-size: 4rem;
-    margin:10px 0px;
+    margin: 10px 0px;
 }
 
-.contents .kidney{
+.contents .kidney {
     font-size: 5rem;
-    margin:20px 0px;
+    margin: 20px 0px;
 }
 
-.contents li{
+.contents li {
     /* list-style: square; */
     padding: 0px 20px;
 }
 
- 
+.the_image {
+}
+
+/* @keyframes fadeinthing {
+    0% {
+        opacity: 0.5;
+    }
+    25% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.5;
+    }
+} */
