@@ -621,10 +621,14 @@ footer .nav_links li a:not(.nav_links-last)::after {
 }
 .contents_container {
     display: flex;
+    padding-top:2rem;
+    padding-bottom:2rem;
 }
 
 .left_navbar {
-    width: 40%;
+    width: 20%;
+    position: fixed;
+    top:20%;
 }
 .navbar_spacing {
     padding-left: 20px;
@@ -644,13 +648,14 @@ footer .nav_links li a:not(.nav_links-last)::after {
 }
 .contents .topics {
     font-size: 4rem;
-    margin: 25px 0px;
+    padding-top: 2rem;
+    margin: 50px 0 25px 0px;
     font-weight: 550;
 }
 
 .contents .kidney {
     font-size: 5rem;
-    margin: 30px 0px;
+    /* margin: 30px 0px; */
     text-decoration: underline;
 }
 
@@ -1099,4 +1104,70 @@ footer .nav_links li a:not(.nav_links-last)::after {
     width: 400px;
     margin: 20px;
     background: url("../IMG/Contents/renal_system.gif") no-repeat center center/contain ;
+}
+
+
+
+
+/* LEFT CONTENT NAV */
+
+.infoContainer{
+    display: flex;
+}
+.left_nav{
+    flex:3;
+    background-color: orange;
+}
+.content{
+    flex:7;
+    /* background-color: pink; */
+}
+
+li{
+    list-style-type: none;
+}
+.home{
+    /* padding-bottom: 15%; */
+    /* background-color: red; */
+}
+.root{
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+.subheading{
+    padding-left: 10%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+    /* background-color: pink; */
+}
+.subheading li{
+    padding-bottom: 5%;
+}
+.eachTitle{
+    padding-left: 15%;
+    background-color: lightblue;
+    /* border: 2px solid red; */
+    padding-top: 5%;
+    font-size: 1.8rem;
+}
+.page_heading{
+    display: flex;
+    justify-content: space-between;
+  padding:5%;
+    /* margin-top: 5%; */
+    font-size: 2rem;
+    border: 2px solid black;
+}
+.subheading ul{
+    display: none;
+    /* padding-top: 5%; */
+}
+
+.isActive{
+    margin-left: 30%;
+}
+
+.left_navbar a{
+    display: block;
 }
