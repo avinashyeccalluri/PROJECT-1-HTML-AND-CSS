@@ -32,6 +32,7 @@ body {
     width: 100vw;
     max-width: 100%;
     font-family: "Montserrat", sans-serif;
+    background-color: #fdfdfb;
 }
 section {
     width: 100%;
@@ -61,6 +62,7 @@ header li {
 header .dropdown_content {
     padding: 10px;
     margin-top: 10px;
+    font-size: 1.5rem;
 }
 header .hover_headings {
     /* padding-left: 25px; */
@@ -69,6 +71,8 @@ header .hover_headings {
     /* padding-bottom: 45px; */
     font-weight: 600;
     font-size: 1.8rem;
+    padding-bottom: 40px;
+
 }
 header .hover_headings:not(.first) {
     padding-left: 25px;
@@ -108,6 +112,7 @@ header .hover_headings:hover {
     border-top: 4px solid #ff7e67;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    /* height: 400px; */
 }
 .dropdown:hover .dropdown_content {
     display: block;
@@ -163,7 +168,7 @@ header .page_padding {
 #center_body {
 }
 .image_container {
-    min-height: 75vh;
+    min-height: 50vh;
     background-image: linear-gradient(
         rgba(25, 25, 25, 0.2),
         rgba(10, 10, 10, 0.1)
@@ -191,7 +196,7 @@ header .page_padding {
     /* padding-bottom: 20px; */
     /* font-family: "Montserrat", sans-serif; */
     font-weight: bolder;
-    font-size: 6rem;
+    font-size: 4rem;
     color: whitesmoke;
     position: absolute;
     top: 50px;
@@ -240,7 +245,7 @@ header .page_padding {
     margin-right: 100px;
 } */
 
-/* #center_body_tiles {
+#center_body_tiles {
     display: flex;
     justify-content: space-evenly;
 }
@@ -280,7 +285,7 @@ header .page_padding {
 #center_body_tiles .total_title .tile_text a {
     color: green;
     font-size: 1.3rem;
-} */
+}
 
 /* SECOND PAGE - GALLERY */
 #second_page {
@@ -635,16 +640,18 @@ footer .nav_links li a:not(.nav_links-last)::after {
 .contents p,
 .contents li {
     font-size: 1.5rem;
-    margin-bottom: 40px 0;
+    margin-bottom: 20px ;
 }
 .contents .topics {
     font-size: 4rem;
-    margin: 10px 0px;
+    margin: 25px 0px;
+    font-weight: 550;
 }
 
 .contents .kidney {
     font-size: 5rem;
-    margin: 20px 0px;
+    margin: 30px 0px;
+    text-decoration: underline;
 }
 
 .contents li {
@@ -1081,3 +1088,15 @@ footer .nav_links li a:not(.nav_links-last)::after {
     }
 }
 /* RESPONSIVE END */
+.contents_image{
+    height: 300px;
+    width:400px;
+    background: url("../IMG/Contents/2610_The_Kidney_revised.png" ) no-repeat center center/contain;
+}
+
+.contents_image_kidneywork{
+    height: 300px;
+    width: 400px;
+    margin: 20px;
+    background: url("../IMG/Contents/renal_system.gif") no-repeat center center/contain ;
+}
