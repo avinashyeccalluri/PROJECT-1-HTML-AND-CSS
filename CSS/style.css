@@ -6,7 +6,6 @@
 
 html {
     font-size: 10px;
-    /* width: 100vw; */
 }
 * {
     margin: 0px;
@@ -618,50 +617,6 @@ footer .nav_links li a:not(.nav_links-last)::after {
     position: relative;
     top: -1.2em;
 }
-.contents_container {
-    /* display: flex; */
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.left_navbar {
-    width: 20%;
-    /* position: fixed; */
-    top: 20%;
-}
-.navbar_spacing {
-    padding-left: 20px;
-    font-size: 13px;
-}
-
-.contents {
-    margin: 0 50px;
-    letter-spacing: 1px;
-    line-height: 2.5rem;
-}
-
-.contents p,
-.contents li {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-.contents .topics {
-    font-size: 4rem;
-    padding-top: 2rem;
-    margin: 50px 0 25px 0px;
-    font-weight: 550;
-}
-
-.contents .kidney {
-    font-size: 5rem;
-    /* margin: 30px 0px; */
-    text-decoration: underline;
-}
-
-.contents li {
-    /* list-style: square; */
-    padding: 0px 20px;
-}
 
 /* @keyframes fadeinthing {
     0% {
@@ -749,7 +704,6 @@ footer .nav_links li a:not(.nav_links-last)::after {
     }
 }
 
-/* @media screen and (max-width: 750px) { */
 @media (min-width: 700px) and (max-width: 899px) {
     header .green_button {
         padding: 1rem 2rem;
@@ -1079,8 +1033,8 @@ footer .nav_links li a:not(.nav_links-last)::after {
         margin-right: 1rem;
     }
     footer .nav_links li a:not(.nav_links-last)::after {
+        margin-left: 1rem;
     }
-    margin-left: 1rem;
     .go_to_top_container {
         padding: 1rem 0 0 0;
         text-align: center;
@@ -1092,80 +1046,29 @@ footer .nav_links li a:not(.nav_links-last)::after {
     }
 }
 /* RESPONSIVE END */
-#anatomy .contents_image {
+
+/* CONTENT PAGES' CSS: */
+
+.body_container {
+    background-color: orange;
+}
+.left_navbar_container {
+    background-color: lightblue;
+}
+.right_content_container {
+    background-color: pink;
+}
+
+.contents_image {
     height: 300px;
     width: 400px;
+}
+#anatomy .contents_image {
     background: url("../IMG/Contents/2610_The_Kidney_revised.png") no-repeat
         center center/contain;
 }
-
-#kidney_working .contents_image_kidneywork {
-    height: 300px;
-    width: 400px;
+#kidney_working .contents_image {
     margin: 20px;
     background: url("../IMG/Contents/renal_system.gif") no-repeat center
         center/contain;
-}
-
-/* LEFT CONTENT NAV */
-
-.infoContainer {
-    display: flex;
-}
-.left_nav {
-    flex: 3;
-    background-color: orange;
-}
-.content {
-    flex: 7;
-    /* background-color: pink; */
-}
-
-li {
-    list-style-type: none;
-}
-.home {
-    /* padding-bottom: 15%; */
-    /* background-color: red; */
-}
-.root {
-    display: block;
-    margin-bottom: 1rem;
-    font-size: 3rem;
-}
-.subheading {
-    padding-left: 10%;
-    padding-bottom: 5%;
-    padding-right: 5%;
-    /* background-color: pink; */
-}
-.subheading li {
-    padding-bottom: 5%;
-}
-.eachTitle {
-    padding-left: 15%;
-    background-color: lightblue;
-    /* border: 2px solid red; */
-    padding-top: 5%;
-    font-size: 1.8rem;
-}
-.page_heading {
-    display: flex;
-    justify-content: space-between;
-    padding: 5%;
-    /* margin-top: 5%; */
-    font-size: 2rem;
-    border: 2px solid black;
-}
-.subheading ul {
-    display: none;
-    /* padding-top: 5%; */
-}
-
-.isActive {
-    margin-left: 30%;
-}
-
-.left_navbar a {
-    display: block;
 }
