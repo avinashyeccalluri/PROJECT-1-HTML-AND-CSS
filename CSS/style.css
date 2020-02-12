@@ -72,7 +72,6 @@ header .hover_headings {
     font-weight: 600;
     font-size: 1.8rem;
     padding-bottom: 40px;
-
 }
 header .hover_headings:not(.first) {
     padding-left: 25px;
@@ -620,15 +619,15 @@ footer .nav_links li a:not(.nav_links-last)::after {
     top: -1.2em;
 }
 .contents_container {
-    display: flex;
-    padding-top:2rem;
-    padding-bottom:2rem;
+    /* display: flex; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .left_navbar {
     width: 20%;
-    position: fixed;
-    top:20%;
+    /* position: fixed; */
+    top: 20%;
 }
 .navbar_spacing {
     padding-left: 20px;
@@ -644,7 +643,7 @@ footer .nav_links li a:not(.nav_links-last)::after {
 .contents p,
 .contents li {
     font-size: 1.5rem;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
 .contents .topics {
     font-size: 4rem;
@@ -1093,81 +1092,80 @@ footer .nav_links li a:not(.nav_links-last)::after {
     }
 }
 /* RESPONSIVE END */
-.contents_image{
+#anatomy .contents_image {
     height: 300px;
-    width:400px;
-    background: url("../IMG/Contents/2610_The_Kidney_revised.png" ) no-repeat center center/contain;
+    width: 400px;
+    background: url("../IMG/Contents/2610_The_Kidney_revised.png") no-repeat
+        center center/contain;
 }
 
-.contents_image_kidneywork{
+#kidney_working .contents_image_kidneywork {
     height: 300px;
     width: 400px;
     margin: 20px;
-    background: url("../IMG/Contents/renal_system.gif") no-repeat center center/contain ;
+    background: url("../IMG/Contents/renal_system.gif") no-repeat center
+        center/contain;
 }
-
-
-
 
 /* LEFT CONTENT NAV */
 
-.infoContainer{
+.infoContainer {
     display: flex;
 }
-.left_nav{
-    flex:3;
+.left_nav {
+    flex: 3;
     background-color: orange;
 }
-.content{
-    flex:7;
+.content {
+    flex: 7;
     /* background-color: pink; */
 }
 
-li{
+li {
     list-style-type: none;
 }
-.home{
+.home {
     /* padding-bottom: 15%; */
     /* background-color: red; */
 }
-.root{
+.root {
     display: block;
     margin-bottom: 1rem;
     font-size: 3rem;
 }
-.subheading{
+.subheading {
     padding-left: 10%;
     padding-bottom: 5%;
     padding-right: 5%;
     /* background-color: pink; */
 }
-.subheading li{
+.subheading li {
     padding-bottom: 5%;
 }
-.eachTitle{
+.eachTitle {
     padding-left: 15%;
     background-color: lightblue;
     /* border: 2px solid red; */
     padding-top: 5%;
     font-size: 1.8rem;
 }
-.page_heading{
+.page_heading {
     display: flex;
     justify-content: space-between;
-  padding:5%;
+    padding: 5%;
     /* margin-top: 5%; */
     font-size: 2rem;
     border: 2px solid black;
 }
-.subheading ul{
+.subheading ul {
     display: none;
     /* padding-top: 5%; */
 }
 
-.isActive{
+.isActive {
     margin-left: 30%;
 }
 
-.left_navbar a{
+.left_navbar a {
     display: block;
 }
