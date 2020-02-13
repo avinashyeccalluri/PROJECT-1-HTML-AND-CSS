@@ -30,7 +30,8 @@ li {
 body {
     width: 100vw;
     max-width: 100%;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: 'Lato', sans-serif;
     background-color: #fdfdfb;
 }
 section {
@@ -64,9 +65,9 @@ header li {
 }
 header .hover_headings {
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     padding-bottom: 4rem;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
 }
 header .hover_headings:not(.first) {
     padding-left: 5rem;
@@ -76,11 +77,12 @@ header .hover_headings:hover {
 }
 .hover_links {
     padding: 20px 15px;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 1.7rem;
     display: block;
 }
 .hover_links:hover {
-    background-color: rgba(80, 220, 255, 0.3);
+    background-color:  #ff7e6793 ;
 }
 .dropdown {
     position: relative;
@@ -597,11 +599,14 @@ footer .nav_links li a:not(.nav_links-last) {
     }
 
     header .hover_headings {
-        font-size: 1.4rem;
+        font-size: 2.4rem !important;
     }
     header .hover_headings:not(.first) {
         padding-left: 20px;
     }
+    .dropdown:hover .dropdown_content {
+    display: none;
+}
 
     .image_container {
         min-height: 30vh;
@@ -683,7 +688,9 @@ footer .nav_links li a:not(.nav_links-last) {
     header .hover_headings:not(.first) {
         padding-left: 20px;
     }
-
+.dropdown:hover .dropdown_content {
+    display: none;
+}
     .image_container {
         min-height: 30vh;
     }
@@ -1128,13 +1135,19 @@ footer .nav_links li a:not(.nav_links-last) {
     background-color: rgba(75, 219, 123, 0.7);
     background-clip: border-box;
 }
+.the_content .page_heading:not(.first_one){
+    margin-top: 20px;
+}
+.dropdown:hover .dropdown_content {
+    display: none;
+}
 .the_content .topic_heading {
     font-size: 3rem;
     font-weight: 500;
     margin: 3rem 0 2rem 0;
     display: inline-block;
-    line-height: 1.2rem;
-    border-bottom: 15px solid rgba(80, 220, 255, 0.7);
+    line-height: 1.5rem;
+    border-bottom: 9px solid rgba(80, 220, 255, 0.7);
 }
 .the_content p,
 .the_content li {
@@ -1148,8 +1161,8 @@ footer .nav_links li a:not(.nav_links-last) {
     content: "> ";
 }
 .the_content > div > *:last-child {
-    border-bottom: 5px solid rgba(255, 255, 0, 0.7);
-    padding-bottom: 1rem;
+    border-bottom: 5px solid rgba(75, 219, 123, 0.7);
+    /* padding-bottom: 1rem; */
 }
 
 .contents_image {
@@ -1163,3 +1176,13 @@ footer .nav_links li a:not(.nav_links-last) {
     margin: 20px;
     background: url("../IMG/Contents/renal_system.gif") no-repeat center center/contain;
 }
+.topic_subtopic{
+    font-size: 2rem !important;
+
+}
+
+.the_content div:nth-child(odd) {
+    background-color: #F3EFEF;
+}
+
+/* # */
