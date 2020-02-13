@@ -36,46 +36,45 @@
 // //     }, 4000);
 // // }
 
-// function myFunction() {
-//     let x = document.getElementsByClassName("navBarContainer");
-//     console.log(x);
+function myFunction() {
+    let x = document.getElementsByClassName("navBarContainer");
+    console.log(x);
 
-//     for (let i = 0; i < x.length; i++) {
-//         if (x[i].style.display === "block") {
-//             x[i].style.display = "none";
-//         } else {
-//             x[i].style.display = "block";
-//         }
-//     }
-// }
+    for (let i = 0; i < x.length; i++) {
+        if (x[i].style.display === "block") {
+            x[i].style.display = "none";
+        } else {
+            x[i].style.display = "block";
+        }
+    }
+}
 
-// $(window).on('load',()=>{
-//     $('.page_heading').on('click',(e)=>{
-//     //    console.log(e.target.nextSibling.nextSibling.style);
+$(window).on("load", () => {
+    $(".left_nav_header_container h2").on("click", e => {
+        if (e.target.parentElement.nextElementSibling != null) {
+            if (e.target.parentElement.nextElementSibling.style.display == "none") {
+                $(".left_navbar_container .isActive")[0].parentElement.children[0].querySelector(".arrow").className = "fa fa-chevron-right arrow";
+                $(".left_navbar_container .isActive")[0].style.display = "none";
+                $(".left_navbar_container .isActive")[0].classList.remove("isActive");
 
-//         if(e.target.nextSibling.nextSibling.style.display == "none" || e.target.nextSibling.nextSibling.style.display == ""){
-//             // console.log('yup');
-//             console.log();
+                e.target.parentElement.nextElementSibling.style.display = "block";
+                e.target.parentElement.nextElementSibling.classList.add("isActive");
+                e.target.children[0].className = "fa fa-chevron-down arrow";
+            } else {
+                e.target.parentElement.nextElementSibling.style.display = "none";
+                e.target.children[0].className = "fa fa-chevron-right arrow";
+            }
+        }
 
-//             if(e.target.children[0].children[0].classList.contains('fa-arrow-right')){
-//             e.target.nextSibling.nextSibling.style.display = "block";
+        // console.log();
 
-//                 e.target.children[0].children[0].className = 'fa fa-arrow-down';
-//             }
-
-//         }else{
-//              e.target.nextSibling.nextSibling.style.display = "none";
-//              e.target.children[0].children[0].className = 'fa fa-arrow-right';
-//         }
-// // console.log();
-
-//         // if(e.target.getAttribute('value') == "anatomy"){
-//         //     document.getElementsByClassName('isActive')[0].style.display = "none";
-//         //     document.getElementById('anatomy').style.display = "block";
-//         //     document.getElementById('anatomy').classList.add('isActive');
-//         // }
-//     })
-// });
+        // if(e.target.getAttribute('value') == "anatomy"){
+        //     document.getElementsByClassName('isActive')[0].style.display = "none";
+        //     document.getElementById('anatomy').style.display = "block";
+        //     document.getElementById('anatomy').classList.add('isActive');
+        // }
+    });
+});
 
 // $(window).on('scroll',(e)=>{
 //     // console.log(e);

@@ -15,13 +15,75 @@
 
 <body>
 
+    <header>
+        <div class="page_padding">
+            <div class="logo">
+                <h2 class="heading"><a href="./index.html">THE KIDNEY</a></h2>
+            </div>
+            <nav class="navBarContainer">
+                <ul class="nav_bar">
+                    <div class="dropdown">
+                        <li><a class="hover_headings" href="kidney.html">Kidney</a></li>
+                        <div class="dropdown_content">
+                            <ul class="kidney">
+                                <li><a class="hover_links" href="kidney.html#about_kidney">About your kidney</a> </li>
+                                <li><a class="hover_links" href="kidney.html#anatomy">Anatomy of your kidney</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <li><a class="hover_headings" href="prevention.html">Prevention</a></li>
+                        <div class="dropdown_content">
+                            <ul class="prevention">
+                                <li><a class="hover_links" href="prevention.html#chronic_disease_what_is">Chronic Kidney
+                                        Disease</a></li>
+                                <li><a class="hover_links" href="prevention.html#chronic_disease_what_is">Kidney
+                                        Cancer</a></li>
+                                <li><a class="hover_links" href="prevention.html#stones_what_is">Kidney Stones</a></li>
+                                <li><a class="hover_links" href="prevention.html#acute_injury_what_is">Acute Kidney
+                                        Injury</a></li>
+                                <li><a class="hover_links" href="prevention.html#uti_what_is">Urinary Tract
+                                        Infection</a></li>
+                                <li><a class="hover_links" href="prevention.html#glomeru_disease">Other Diseases</a>
+                                </li>
+                                <li><a class="hover_links" href="prevention.html#treatments_available">Treatments
+                                        Available</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <li><a class="hover_headings" href="support.html">Support</a></li>
+                        <div class="dropdown_content">
+                            <ul class="support">
+                                <li><a class="hover_links" href="support.html#kidney_dialysis">Dialysis</a></li>
+                                <li><a class="hover_links"
+                                        href="support.html#kidney_transplantation">Transplantation</a></li>
+                                <li><a class="hover_links" href="support.html#organ_donation">Kidney Donation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+            <div class="green_button_container">
+                <a href="#" class="green_button">Contact Us</a>
+            </div>
+            <div class="burger_icon" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </header>
+
     <section class="body_container page_padding">
 
         <div class="left_navbar_container">
 
             <div class="dialysis">
-                <h2>Dialysis</h2>
-                <div class="left_nav_topics_container">
+                <div class="left_nav_header_container">
+                    <h2>Dialysis<i class="fa fa-chevron-down arrow"></i></h2>
+                </div>
+                <div class="left_nav_topics_container isActive">
                     <ul>
                         <li><a href="#kidney_dialysis">Kidney Dialysis</a></li>
                         <li><a href="#haemodialysis">Home Haemodialysis</a></li>
@@ -31,8 +93,11 @@
                 </div>
             </div>
             <div class="kidney_transplantation">
-                <h2>Transplantation</h2>
-                <div class="left_nav_topics_container">
+                <div class="left_nav_header_container">
+                    <h2>Transplantation<i class="fa fa-chevron-right arrow"></i></h2>
+                </div>
+
+                <div class="left_nav_topics_container" style="display: none;">
                     <ul>
                         <li><a href="#kidney_transplantation">Kidney Transplantation</a></li>
                         <li><a href="#things_donor_should_do">Things to do</a></li>
@@ -41,7 +106,9 @@
                 </div>
             </div>
             <div class="kidney_donation">
-                <h2><a href="#organ_donation">Donation</a></h2>
+                <div class="left_nav_header_container">
+                    <h2><a href="#organ_donation">Kidney Donation</a></h2>
+                </div>
             </div>
 
         </div>
@@ -236,8 +303,7 @@
 
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="../JS/jquery341.js"></script>
     <script src="../JS/effects.js"></script>
 </body>
 
