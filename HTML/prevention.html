@@ -15,12 +15,74 @@
 
 <body>
 
+    <header>
+        <div class="page_padding">
+            <div class="logo">
+                <h2 class="heading"><a href="./index.html">THE KIDNEY</a></h2>
+            </div>
+            <nav class="navBarContainer">
+                <ul class="nav_bar">
+                    <div class="dropdown">
+                        <li><a class="hover_headings" href="kidney.html">Kidney</a></li>
+                        <div class="dropdown_content">
+                            <ul class="kidney">
+                                <li><a class="hover_links" href="kidney.html#about_kidney">About your kidney</a> </li>
+                                <li><a class="hover_links" href="kidney.html#anatomy">Anatomy of your kidney</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <li><a class="hover_headings" href="prevention.html">Prevention</a></li>
+                        <div class="dropdown_content">
+                            <ul class="prevention">
+                                <li><a class="hover_links" href="prevention.html#chronic_disease_what_is">Chronic Kidney
+                                        Disease</a></li>
+                                <li><a class="hover_links" href="prevention.html#chronic_disease_what_is">Kidney
+                                        Cancer</a></li>
+                                <li><a class="hover_links" href="prevention.html#stones_what_is">Kidney Stones</a></li>
+                                <li><a class="hover_links" href="prevention.html#acute_injury_what_is">Acute Kidney
+                                        Injury</a></li>
+                                <li><a class="hover_links" href="prevention.html#uti_what_is">Urinary Tract
+                                        Infection</a></li>
+                                <li><a class="hover_links" href="prevention.html#glomeru_disease">Other Diseases</a>
+                                </li>
+                                <li><a class="hover_links" href="prevention.html#treatments_available">Treatments
+                                        Available</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <li><a class="hover_headings" href="support.html">Support</a></li>
+                        <div class="dropdown_content">
+                            <ul class="support">
+                                <li><a class="hover_links" href="support.html#kidney_dialysis">Dialysis</a></li>
+                                <li><a class="hover_links"
+                                        href="support.html#kidney_transplantation">Transplantation</a></li>
+                                <li><a class="hover_links" href="support.html#organ_donation">Kidney Donation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+            <div class="green_button_container">
+                <a href="#" class="green_button">Contact Us</a>
+            </div>
+            <div class="burger_icon" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </header>
+
     <section class="body_container page_padding">
 
         <div class="left_navbar_container">
             <div class="chronic_disease">
-                <h2>Chronic Kidney Disease</h2>
-                <div class="left_nav_topics_container">
+                <div class="left_nav_header_container">
+                    <h2>Chronic Kidney Disease <i class="fa fa-chevron-down arrow"></i></h2>
+                </div>
+                <div class="left_nav_topics_container isActive">
                     <ul>
                         <li><a href="#chronic_disease_what_is">What is Chronic Kidney Disease?</a></li>
                         <li><a href="#chronic_disease_do_you_know">Do you Know?</a></li>
@@ -31,8 +93,10 @@
                 </div>
             </div>
             <div class="cancer">
-                <h2>Kidney Cancer</h2>
-                <div class="left_nav_topics_container">
+                <div class="left_nav_header_container">
+                    <h2>Kidney Cancer<i class="fa fa-chevron-right arrow"></i></h2>
+                </div>
+                <div class="left_nav_topics_container" style="display: none;">
                     <ul>
                         <li><a href="#cancer_what_is">What is Kidney Cancer?</a></li>
                         <li><a href="#cancer_do_you_know">Do you Know?</a></li>
@@ -44,8 +108,10 @@
                 </div>
             </div>
             <div class="stones">
-                <h2>Kidney Stones</h2>
-                <div class="left_nav_topics_container">
+                <div class="left_nav_header_container">
+                    <h2>Kidney Stones<i class="fa fa-chevron-right arrow"></i></h2>
+                </div>
+                <div class="left_nav_topics_container" style="display: none;">
                     <ul>
                         <li><a href="#stones_what_is">What are Kidney Stones?</a></li>
                         <li><a href="#stones_what_causes">What causes Kidney Stones?</a></li>
@@ -57,10 +123,13 @@
                 </div>
             </div>
             <div class="acute_injury">
-                <h2>Acute Kidney Injury</h2>
-                <div class="left_nav_topics_container">
+
+                <div class="left_nav_header_container">
+                    <h2>Acute Kidney Injury<i class="fa fa-chevron-right arrow"></i></h2>
+                </div>
+                <div class="left_nav_topics_container" style="display: none;">
                     <ul>
-                        <li><a href="#stones_what_is">What is Acute Kidney Injury?</a></li>
+                        <li><a href="#acute_injury_what_is">What is Acute Kidney Injury?</a></li>
                         <li><a href="#acute_injury_symptoms">What are the symptoms?</a></li>
                         <li><a href="#acute_injury_what_causes">What are the causes?</a></li>
                         <li><a href="#acute_injury_prevention_steps">Preventive measures</a></li>
@@ -68,8 +137,10 @@
                 </div>
             </div>
             <div class="uti">
-                <h2>Urinary Tract Infection</h2>
-                <div class="left_nav_topics_container">
+                <div class="left_nav_header_container">
+                    <h2>Urinary Tract Infection<i class="fa fa-chevron-right arrow"></i></h2>
+                </div>
+                <div class="left_nav_topics_container" style="display: none;">
                     <ul>
                         <li><a href="#uti_what_is">What is Urinary Tract Infection?</a></li>
                         <li><a href="#uti_what_causes">Causes?</a></li>
@@ -79,19 +150,11 @@
                 </div>
             </div>
             <div class="other_diseases">
-                <h2>Other Diseases</h2>
-                <div class="left_nav_topics_container">
-                    <ul>
-                        <li><a href="#glomeru_disease">Glomerulonephritis</a></li>
-                        <li><a href="#infections">Infections</a></li>
-                        <li><a href="#immune_disease">Immune diseases</a></li>
-                        <li><a href="#uti_prevention_steps">Preventive Methods</a></li>
-                    </ul>
+
+                <div class="left_nav_header_container">
+                    <h2>Other Diseases<i class="fa fa-chevron-right arrow"></i></h2>
                 </div>
-            </div>
-            <div class="other_diseases">
-                <h2>Other Diseases</h2>
-                <div class="left_nav_topics_container">
+                <div class="left_nav_topics_container" style="display: none;">
                     <ul>
                         <li><a href="#glomeru_disease">Glomerulonephritis</a></li>
                         <li><a href="#infections">Infections</a></li>
@@ -100,14 +163,18 @@
                 </div>
             </div>
             <div class="treatments_available">
-                <h2><a href="#treatments_available">Treatments Available</a></h2>
+                <div class="left_nav_header_container">
+                    <h2><a href="#treatments_available">Treatments Available</a></h2>
+                    <!-- <span class="arrow"><i class="fa fa-chevron-right"></i></span> -->
+                </div>
+
             </div>
 
         </div>
 
         <div class="right_content_container prevention">
 
-            <section class="the_content chronic_disease isActive">
+            <section class="the_content chronic_disease">
                 <h1 class="page_heading">Chronic Kidney Disease</h1>
                 <div id="chronic_disease_what_is">
                     <h3 class="topic_heading">What is Chronic Kidney Disease?</h3>
@@ -240,7 +307,7 @@
                 <div id="cancer_what_causes">
                     <h3 class="topic_heading">What causes Kidney Cancer?</h3>
                     <p>The risk factors that help in the arousal of the kidney cancers are</p>
-                    <ul>
+                    <ul class="bullets_required">
                         <li>Age is the major factor</li>
                         <li>Smoking, high BP, stress</li>
                         <li>Kidney Stones</li>
@@ -252,7 +319,7 @@
                 <div id="cancer_symptoms">
                     <h3 class="topic_heading">What are the symptoms?</h3>
                     <p>The following symptoms may rise in a person if he or she might be prone to kidney cancer:</p>
-                    <ul>
+                    <ul class="bullets_required">
                         <li>Blood in the urine</li>
                         <li>Changes in colour of urine from light yellow to dark, rusty or brown </li>
                         <li>Lower back, abdominal or flank pain without being affected by an injury</li>
@@ -528,8 +595,7 @@
 
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="../JS/jquery341.js"></script>
     <script src="../JS/effects.js"></script>
 </body>
 
