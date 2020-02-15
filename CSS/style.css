@@ -31,7 +31,7 @@ body {
     width: 100vw;
     max-width: 100%;
     /* font-family: "Montserrat", sans-serif; */
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     background-color: #fdfdfb;
 }
 section {
@@ -82,7 +82,7 @@ header .hover_headings:hover {
     display: block;
 }
 .hover_links:hover {
-    background-color:  #ff7e6793 ;
+    background-color: #ff7e6793;
 }
 .dropdown {
     position: relative;
@@ -605,9 +605,15 @@ footer .nav_links li a:not(.nav_links-last) {
         padding-left: 20px;
     }
     .dropdown:hover .dropdown_content {
-    display: none;
-}
+        display: none;
+    }
 
+    .left_nav_header_container h2 {
+        font-size: 1.2rem !important;
+    }
+    .page_heading {
+        font-size: 3.5rem !important;
+    }
     .image_container {
         min-height: 30vh;
     }
@@ -681,16 +687,21 @@ footer .nav_links li a:not(.nav_links-last) {
     header .heading {
         font-size: 2rem;
     }
-
+    .left_nav_header_container h2 {
+        font-size: 1.2rem !important;
+    }
+    .page_heading {
+        font-size: 3.5rem !important;
+    }
     header .hover_headings {
         font-size: 1.2rem;
     }
     header .hover_headings:not(.first) {
         padding-left: 20px;
     }
-.dropdown:hover .dropdown_content {
-    display: none;
-}
+    .dropdown:hover .dropdown_content {
+        display: none;
+    }
     .image_container {
         min-height: 30vh;
     }
@@ -847,6 +858,14 @@ footer .nav_links li a:not(.nav_links-last) {
     .image_container img {
         top: -40px;
     }
+    .dropdown:hover .dropdown_content {
+        display: none;
+    }
+
+    .left_navbar_container {
+        display: none;
+    }
+
     .main_heading {
         width: 50%;
         font-size: 1.5rem;
@@ -1064,7 +1083,7 @@ footer .nav_links li a:not(.nav_links-last) {
 .left_navbar_container {
     /* background-color: lightblue; */
     padding: 1rem 1rem;
-    flex: 2;
+    flex: 3;
 }
 .left_navbar_container {
     -webkit-user-select: none;
@@ -1122,7 +1141,6 @@ footer .nav_links li a:not(.nav_links-last) {
 .left_nav_topics_container ul li:hover {
     background-color: rgb(255, 255, 255);
 }
-
 .the_content:not(:last-child) {
     padding-bottom: 1rem;
 }
@@ -1135,12 +1153,10 @@ footer .nav_links li a:not(.nav_links-last) {
     background-color: rgba(75, 219, 123, 0.7);
     background-clip: border-box;
 }
-.the_content .page_heading:not(.first_one){
+.the_content .page_heading:not(.first_one) {
     margin-top: 20px;
 }
-.dropdown:hover .dropdown_content {
-    display: none;
-}
+
 .the_content .topic_heading {
     font-size: 3rem;
     font-weight: 500;
@@ -1176,13 +1192,13 @@ footer .nav_links li a:not(.nav_links-last) {
     margin: 20px;
     background: url("../IMG/Contents/renal_system.gif") no-repeat center center/contain;
 }
-.topic_subtopic{
+.topic_subtopic {
     font-size: 2rem !important;
-
+    margin: 1rem;
 }
 
 .the_content div:nth-child(odd) {
-    background-color: #F3EFEF;
+    background-color: #f3efef;
 }
 
-/* # */
+/* CONTENT RESPONSIVE */
