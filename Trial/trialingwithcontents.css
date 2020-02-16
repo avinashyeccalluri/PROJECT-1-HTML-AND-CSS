@@ -1,12 +1,8 @@
 .aboutus{
     display: flex;
     position: relative;
-    
-    /* display: inline; */
 }
-p{
-    color: aquamarine;
-}
+
 .about_us_p{
     height: 200px;
     width: 600px;
@@ -21,7 +17,6 @@ p{
 }
 .about_us_img1{
     background: red;
-    position: relative;
     
 }
 
@@ -43,7 +38,6 @@ p{
 
 }
 .about_us_img2:hover{
-    /* z-index: 1; */
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.);
