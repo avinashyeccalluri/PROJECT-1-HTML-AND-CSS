@@ -66,6 +66,21 @@ $(window).on("load", () => {
             }
         }
 
+        let a = e.target.classList[0];
+
+        let p = $('section.the_content');
+        for (let uy = 0; uy < p.length; uy++) {
+            if (p[uy].classList.contains(a)) {
+                let po = $('.is_active');
+                po[0].style.display = "none";
+                po[0].classList.remove('is_active');
+                p[uy].style.display = "block";
+                console.log(p[uy]);
+
+                p[uy].classList.add('is_active');
+            }
+        }
+
         // console.log();
 
         // if(e.target.getAttribute('value') == "anatomy"){
@@ -76,14 +91,22 @@ $(window).on("load", () => {
     });
 });
 
-// $(window).on('scroll',(e)=>{
+// $(window).on('scroll', (e) => {
 //     // console.log(e);
 //     console.log();
-//     if(window.pageYOffset <= 100 ){
+//     if (window.pageYOffset <= 100) {
 //         $('.left_navbar')[0].style.top = "15%";
-//     }else{
-//     $('.left_navbar')[0].style.top = "5%";
+//     } else {
+//         $('.left_navbar')[0].style.top = "5%";
 
 //     }
 
 // })
+
+let x = $('.the_content');
+for (let i = 0; i < x.length; i++) {
+    if (!x[i].classList.contains("is_active")) {
+        x[i].style.display = "none";
+    }
+}
+
