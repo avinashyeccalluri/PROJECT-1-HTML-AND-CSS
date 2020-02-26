@@ -123,7 +123,7 @@ header .hover_headings:hover {
 }
 header .green_button {
     letter-spacing: 0.1rem;
-    background: #e51f28;
+    background: #b92d34;
     border: none;
     color: white;
     font-size: 2rem;
@@ -138,7 +138,7 @@ header .green_button {
     font-size: 5.6rem;
     font-weight: bolder;
     text-align: center;
-    background-color: #e51f28;
+    background-color: #b92d34;
     font-family: 'Cabin', sans-serif;
     height: 150px;
     justify-content: space-around;
@@ -199,7 +199,7 @@ header .page_padding {
     text-shadow: 0px 4px 12px rgba(0, 0, 0, 1);
 }
 .first_section .green_button {
-    background: #e51f28;
+    background: #b92d34;
     border: none;
     color: white;
     font-size: 2rem;
@@ -221,11 +221,12 @@ header .page_padding {
     padding-bottom: 3rem;
 }
 .gallery_heading {
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: 600;
     text-transform: uppercase;
     padding-bottom: 2rem;
     text-align: center;
+    color: #b92d34;
 }
 
 .our_gallery {
@@ -379,11 +380,13 @@ section.subscription {
 }
 .subscription-h {
     color: white;
-    background-color: #e51f28;
+    background-color: #b92d34;
     /* background-image: linear-gradient(rgba(255, 255, 255, 0.507), rgba(63, 62, 62, 0.253)), url("../IMG/bg/sub_head_bg.jpg"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.2rem;
 }
 .subscription-h h2 {
     font-size: 5em;
@@ -770,10 +773,10 @@ footer .nav_links li a:not(.nav_links-last) {
         left: 2rem;
     }
 
-    .gallery_heading {
+    /* .gallery_heading {
         padding: 2rem 0 0 0;
         font-size: 2.2rem;
-    }
+    } */
     .our_gallery {
         padding-bottom: 1rem;
     }
@@ -791,7 +794,7 @@ footer .nav_links li a:not(.nav_links-last) {
     }
 
     .served_over-big-left {
-        background-color: #e51f28;
+        background-color: #b92d34;
         flex: 1;
         min-height: 0px;
         font-size: 2rem;
@@ -1205,7 +1208,7 @@ footer .nav_links li a:not(.nav_links-last) {
     margin: 10px;
     text-align: center;
     font-size: 1.4rem;
-    color: #e51f28;
+    color: #b92d34;
 }
 
 .box_styling_1{
@@ -1213,8 +1216,8 @@ footer .nav_links li a:not(.nav_links-last) {
 }
 
 .box_styling_2{
-    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(42, 40, 42, 0.73)),url('../IMG/transplant.png') no-repeat center center/cover;
-    opacity: .7;
+    background: url('../IMG/transplant.png') no-repeat center center/cover;
+    /* opacity: .7; */
     background-color: #000000;
 }
 
