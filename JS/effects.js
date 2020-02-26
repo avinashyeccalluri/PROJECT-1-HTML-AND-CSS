@@ -103,12 +103,12 @@ $(window).on("load", () => {
 
 // })
 
-let x = $('.the_content');
-for (let i = 0; i < x.length; i++) {
-    if (!x[i].classList.contains("is_active")) {
-        x[i].style.display = "none";
-    }
-}
+// let x = $('.the_content');
+// for (let i = 0; i < x.length; i++) {
+//     if (!x[i].classList.contains("is_active")) {
+//         x[i].style.display = "none";
+//     }
+// }
 
 //this
 
