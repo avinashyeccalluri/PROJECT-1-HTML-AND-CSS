@@ -18,10 +18,12 @@ html {
 body, h1, h2, h3, h4, h5, h6, p, a, ul, li{
     margin: 0;
     padding: 0;
-    ;
+    
 }
 body{
      /* background-color: #F8F9FA; */
+     width: 100vw;
+     height: 100vh;
 }
 a {
     text-decoration: none;
@@ -495,8 +497,8 @@ footer .nav_links li a:not(.nav_links-last) {
 
 @media (min-width: 900px) and (max-width: 1024px) {
     .about_images{
-        height: 100px;
-        width: 100px;    
+        height: 100px !important;
+        width: 100px !important;    
     }
 
     .page_padding {
@@ -710,7 +712,7 @@ footer .nav_links li a:not(.nav_links-last) {
     .burger_icon > * {
         width: 35px;
         height: 5px;
-        background-color: #4bdb7b;
+        background-color: #b92d34;
         margin: 6px 0;
     }
     .burger_icon {
