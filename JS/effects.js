@@ -41,7 +41,7 @@ mygallery();
 
 function mygallery(){
     setInterval(()=>{
-        document.getElementsByClassName('one_row')[0].setAttribute('background-size','cover');
+        // document.getElementsByClassName('one_row').setAttribute('background-size','cover');
         document.getElementsByClassName('one_row')[0].src=imgArr1[our_gallery_index];
         document.getElementsByClassName('one_row')[1].src=imgArr2[our_gallery_index];
         document.getElementsByClassName('one_row')[2].src=imgArr3[our_gallery_index];
