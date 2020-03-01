@@ -4,8 +4,58 @@ let imgArr = [
     "../IMG/adult-doctors-gloves-health-263337.jpg"
 ];
 
+let imgArr1=[
+    "../IMG/action-adult-affection-eldery-339620.jpg",
+    "../IMG/activity-asian-people-boys-children-1153976.jpg",
+    "../IMG/adult-doctors-gloves-health-263337.jpg"
+];
+let imgArr2=[
+    "../IMG/adult-doctors-gloves-health-263337.jpg",
+    "../IMG/action-adult-affection-eldery-339620.jpg",
+    "../IMG/activity-asian-people-boys-children-1153976.jpg",    
+];
+let imgArr3=[
+    "../IMG/activity-asian-people-boys-children-1153976.jpg",
+    "../IMG/action-adult-affection-eldery-339620.jpg",
+    "../IMG/activity-asian-people-boys-children-1153976.jpg",  
+];
+let imgArr4=[
+    "../IMG/action-adult-affection-eldery-339620.jpg",
+    "../IMG/activity-asian-people-boys-children-1153976.jpg",
+    "../IMG/adult-doctors-gloves-health-263337.jpg"
+];
+let imgArr5=[
+    "../IMG/action-adult-affection-eldery-339620.jpg",
+    "../IMG/activity-asian-people-boys-children-1153976.jpg",
+    "../IMG/adult-doctors-gloves-health-263337.jpg"
+];
+let imgArr6=[
+    "../IMG/action-adult-affection-eldery-339620.jpg",
+    "../IMG/activity-asian-people-boys-children-1153976.jpg",
+    "../IMG/adult-doctors-gloves-health-263337.jpg"
+];
+var our_gallery_index=0;
 var myIndex = 0;
 carousel();
+mygallery();
+
+function mygallery(){
+    setInterval(()=>{
+        document.getElementsByClassName('one_row')[0].setAttribute('background-size','cover');
+        document.getElementsByClassName('one_row')[0].src=imgArr1[our_gallery_index];
+        document.getElementsByClassName('one_row')[1].src=imgArr2[our_gallery_index];
+        document.getElementsByClassName('one_row')[2].src=imgArr3[our_gallery_index];
+        document.getElementsByClassName('one_row')[3].src=imgArr4[our_gallery_index];
+        document.getElementsByClassName('one_row')[4].src=imgArr5[our_gallery_index];
+        document.getElementsByClassName('one_row')[5].src=imgArr6[our_gallery_index];
+        our_gallery_index++;
+        if(our_gallery_index==imgArr1.length){
+            our_gallery_index=0;
+        }
+
+        
+    },2000);
+}
 
 function carousel() {
 

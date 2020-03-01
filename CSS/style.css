@@ -227,20 +227,23 @@ header .page_padding {
     font-size: 4rem;
     font-weight: 600;
     text-transform: uppercase;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
     text-align: center;
     color: #b92d34;
+    margin-bottom: 30px;
 }
 
 .our_gallery {
-    justify-content: space-around;
+    /* justify-content: space-around; */
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .our_gallery .one_row {
+    height:250px;
     width: 300px;
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
     background-size: cover;
     box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.56);
 }
