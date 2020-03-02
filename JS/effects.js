@@ -4,61 +4,60 @@ let imgArr = [
     "../IMG/adult-doctors-gloves-health-263337.jpg"
 ];
 
-let imgArr1=[
+let imgArr1 = [
     "../IMG/action-adult-affection-eldery-339620.jpg",
     "../IMG/activity-asian-people-boys-children-1153976.jpg",
     "../IMG/adult-doctors-gloves-health-263337.jpg"
 ];
-let imgArr2=[
+let imgArr2 = [
     "../IMG/adult-doctors-gloves-health-263337.jpg",
     "../IMG/action-adult-affection-eldery-339620.jpg",
-    "../IMG/activity-asian-people-boys-children-1153976.jpg",    
+    "../IMG/activity-asian-people-boys-children-1153976.jpg"
 ];
-let imgArr3=[
+let imgArr3 = [
     "../IMG/activity-asian-people-boys-children-1153976.jpg",
     "../IMG/action-adult-affection-eldery-339620.jpg",
-    "../IMG/activity-asian-people-boys-children-1153976.jpg",  
+    "../IMG/activity-asian-people-boys-children-1153976.jpg"
 ];
-let imgArr4=[
-    "../IMG/action-adult-affection-eldery-339620.jpg",
-    "../IMG/activity-asian-people-boys-children-1153976.jpg",
-    "../IMG/adult-doctors-gloves-health-263337.jpg"
-];
-let imgArr5=[
+let imgArr4 = [
     "../IMG/action-adult-affection-eldery-339620.jpg",
     "../IMG/activity-asian-people-boys-children-1153976.jpg",
     "../IMG/adult-doctors-gloves-health-263337.jpg"
 ];
-let imgArr6=[
+let imgArr5 = [
     "../IMG/action-adult-affection-eldery-339620.jpg",
     "../IMG/activity-asian-people-boys-children-1153976.jpg",
     "../IMG/adult-doctors-gloves-health-263337.jpg"
 ];
-var our_gallery_index=0;
+let imgArr6 = [
+    "../IMG/action-adult-affection-eldery-339620.jpg",
+    "../IMG/activity-asian-people-boys-children-1153976.jpg",
+    "../IMG/adult-doctors-gloves-health-263337.jpg"
+];
+var our_gallery_index = 0;
 var myIndex = 0;
-carousel();
-mygallery();
+if (document.querySelector(".first_section")) {
+    carousel();
+    mygallery();
+}
 
-function mygallery(){
-    setInterval(()=>{
+function mygallery() {
+    setInterval(() => {
         // document.getElementsByClassName('one_row').setAttribute('background-size','cover');
-        document.getElementsByClassName('one_row')[0].src=imgArr1[our_gallery_index];
-        document.getElementsByClassName('one_row')[1].src=imgArr2[our_gallery_index];
-        document.getElementsByClassName('one_row')[2].src=imgArr3[our_gallery_index];
-        document.getElementsByClassName('one_row')[3].src=imgArr4[our_gallery_index];
-        document.getElementsByClassName('one_row')[4].src=imgArr5[our_gallery_index];
-        document.getElementsByClassName('one_row')[5].src=imgArr6[our_gallery_index];
+        document.getElementsByClassName("one_row")[0].src = imgArr1[our_gallery_index];
+        document.getElementsByClassName("one_row")[1].src = imgArr2[our_gallery_index];
+        document.getElementsByClassName("one_row")[2].src = imgArr3[our_gallery_index];
+        document.getElementsByClassName("one_row")[3].src = imgArr4[our_gallery_index];
+        document.getElementsByClassName("one_row")[4].src = imgArr5[our_gallery_index];
+        document.getElementsByClassName("one_row")[5].src = imgArr6[our_gallery_index];
         our_gallery_index++;
-        if(our_gallery_index==imgArr1.length){
-            our_gallery_index=0;
+        if (our_gallery_index == imgArr1.length) {
+            our_gallery_index = 0;
         }
-
-        
-    },2000);
+    }, 2000);
 }
 
 function carousel() {
-
     let imgContainer = document.getElementsByClassName("image_container")[0];
 
     setInterval(() => {
@@ -108,16 +107,16 @@ $(window).on("load", () => {
 
         let a = e.target.classList[0];
 
-        let p = $('section.the_content');
+        let p = $("section.the_content");
         for (let uy = 0; uy < p.length; uy++) {
             if (p[uy].classList.contains(a)) {
-                let po = $('.is_active');
+                let po = $(".is_active");
                 po[0].style.display = "none";
-                po[0].classList.remove('is_active');
+                po[0].classList.remove("is_active");
                 p[uy].style.display = "block";
                 console.log(p[uy]);
 
-                p[uy].classList.add('is_active');
+                p[uy].classList.add("is_active");
             }
         }
 
@@ -151,5 +150,3 @@ $(window).on("load", () => {
 // }
 
 //this
-
-
