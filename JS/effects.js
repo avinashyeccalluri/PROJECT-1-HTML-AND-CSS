@@ -1,84 +1,46 @@
-let imgArr = [
-    "../IMG/action-adult-affection-eldery-339620.jpg",
-    "../IMG/activity-asian-people-boys-children-1153976.jpg",
-    "../IMG/adult-doctors-gloves-health-263337.jpg"
-];
+//  Gallery
+function mygallery() {
+    let galleryFolderPath = "../IMG/gallery/";
+    let imgExt = ".jpg";
+    let totalGalleryImages = 23;
+    let interval = 2000;
+    imageSwapper(".one_row", galleryFolderPath, imgExt, totalGalleryImages, interval);
+}
 
-let imgArr1 = [
-    "../IMG/action-adult-affection-eldery-339620.jpg",
-    "../IMG/activity-asian-people-boys-children-1153976.jpg",
-    "../IMG/adult-doctors-gloves-health-263337.jpg"
-];
-let imgArr2 = [
-    "../IMG/adult-doctors-gloves-health-263337.jpg",
-    "../IMG/action-adult-affection-eldery-339620.jpg",
-    "../IMG/activity-asian-people-boys-children-1153976.jpg"
-];
-let imgArr3 = [
-    "../IMG/activity-asian-people-boys-children-1153976.jpg",
-    "../IMG/action-adult-affection-eldery-339620.jpg",
-    "../IMG/activity-asian-people-boys-children-1153976.jpg"
-];
-let imgArr4 = [
-    "../IMG/action-adult-affection-eldery-339620.jpg",
-    "../IMG/activity-asian-people-boys-children-1153976.jpg",
-    "../IMG/adult-doctors-gloves-health-263337.jpg"
-];
-let imgArr5 = [
-    "../IMG/action-adult-affection-eldery-339620.jpg",
-    "../IMG/activity-asian-people-boys-children-1153976.jpg",
-    "../IMG/adult-doctors-gloves-health-263337.jpg"
-];
-let imgArr6 = [
-    "../IMG/action-adult-affection-eldery-339620.jpg",
-    "../IMG/activity-asian-people-boys-children-1153976.jpg",
-    "../IMG/adult-doctors-gloves-health-263337.jpg"
-];
-var our_gallery_index = 0;
-var myIndex = 0;
+//  Main section
+function carousel() {
+    let jumboFolderPath = "../IMG/jumbo/";
+    let imgExt = ".jpg";
+    let totalGalleryImages = 3;
+    let interval = 4000;
+    imageSwapper(".the_image", jumboFolderPath, imgExt, totalGalleryImages, interval);
+}
+
+function imageSwapper(selector, path, ext, totalCount, interval) {
+    let currentImageCount = 0;
+    setInterval(() => {
+        let imageContainers = $(selector);
+        for (let i = 0; i < imageContainers.length; i++) {
+            currentImageCount++;
+            if (currentImageCount > totalCount) {
+                currentImageCount = 1;
+            }
+            imageContainers[i].setAttribute("src", path + currentImageCount + ext);
+            imageContainers[i].setAttribute("alt", currentImageCount);
+        }
+        if (currentImageCount > totalCount) {
+            currentImageCount = 1;
+        }
+    }, interval);
+}
+
 if (document.querySelector(".first_section")) {
     carousel();
     mygallery();
 }
 
-function mygallery() {
-    setInterval(() => {
-        // document.getElementsByClassName('one_row').setAttribute('background-size','cover');
-        document.getElementsByClassName("one_row")[0].src = imgArr1[our_gallery_index];
-        document.getElementsByClassName("one_row")[1].src = imgArr2[our_gallery_index];
-        document.getElementsByClassName("one_row")[2].src = imgArr3[our_gallery_index];
-        document.getElementsByClassName("one_row")[3].src = imgArr4[our_gallery_index];
-        document.getElementsByClassName("one_row")[4].src = imgArr5[our_gallery_index];
-        document.getElementsByClassName("one_row")[5].src = imgArr6[our_gallery_index];
-        our_gallery_index++;
-        if (our_gallery_index == imgArr1.length) {
-            our_gallery_index = 0;
-        }
-    }, 2000);
-}
-
-function carousel() {
-    let imgContainer = document.getElementsByClassName("image_container")[0];
-
-    setInterval(() => {
-        imgContainer.innerHTML = "";
-        let imgPath = imgArr[myIndex++];
-        let theImg = document.createElement("img");
-        theImg.setAttribute("src", imgPath);
-        theImg.setAttribute("alt", "hmmm");
-        theImg.setAttribute("class", "the_image");
-        imgContainer.appendChild(theImg);
-
-        if (myIndex >= imgArr.length) {
-            myIndex = 0;
-        }
-    }, 4000);
-}
-
 function myFunction() {
     let x = document.getElementsByClassName("navBarContainer");
-    console.log(x);
-
     for (let i = 0; i < x.length; i++) {
         if (x[i].style.display === "block") {
             x[i].style.display = "none";
@@ -114,7 +76,6 @@ $(window).on("load", () => {
                 po[0].style.display = "none";
                 po[0].classList.remove("is_active");
                 p[uy].style.display = "block";
-                console.log(p[uy]);
 
                 p[uy].classList.add("is_active");
             }
@@ -148,5 +109,3 @@ $(window).on("load", () => {
 //         x[i].style.display = "none";
 //     }
 // }
-
-//this

@@ -301,11 +301,11 @@ header .page_padding {
     /* padding-top: 2%; */
     background-color: whitesmoke;
 }
-.n-1-h h2 {
+.awareness_heading {
     font-size: 5em;
     font-weight: 600;
     text-transform: uppercase;
-    padding-bottom: 2%;
+    /* padding-bottom: 2%; */
     text-align: center;
     word-spacing: 2rem;
     /* background-color: orange; */
@@ -335,7 +335,7 @@ header .page_padding {
     font-size: 5em;
     font-weight: 600;
     text-transform: uppercase;
-    padding-bottom: 2%;
+    /* padding-bottom: 2%; */
     text-align: center;
     word-spacing: 2rem;
     /* margin-bottom: 30px; */
@@ -349,8 +349,8 @@ header .page_padding {
 .our_gallery .one_row {
     margin: 2%;
     margin-bottom: 0;
-    /* width: 250px; */
-    height: 250px;
+    width: 300px;
+    height: 200px;
     background-color: white;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     background-size: cover;
@@ -1326,14 +1326,14 @@ footer .nav_links li a:not(.nav_links-last) {
     color: #ff3640;
 }
 .box_styling_1 {
-    background: url("../IMG/robina-weermeijer-igwG8aIaypo-unsplash.jpg") no-repeat center center/cover;
+    background: url("../IMG/gallery/1.jpg") no-repeat center center/cover;
 }
 .box_styling_2 {
-    background: url("../IMG/transplant.png") no-repeat center center/cover;
+    background: url("../IMG/gallery/2.jpg") no-repeat center center/cover;
     /* opacity: .7; */
 }
 .box_styling_3 {
-    background: url("../IMG/01-kidney-disease-india.jpg") no-repeat center center/cover;
+    background: url("../IMG/gallery/3.jpg") no-repeat center center/cover;
     /* opacity: .7; */
     /* justify-content: end; */
 }
