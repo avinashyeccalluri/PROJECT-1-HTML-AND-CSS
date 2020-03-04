@@ -83,7 +83,7 @@ header .hover_headings:not(.first) {
     padding-left: 5rem;
 }
 header .hover_headings:hover {
-    color: #ff3640;
+    color: #b62428;
 }
 .hover_links {
     padding: 15px 10px;
@@ -92,7 +92,7 @@ header .hover_headings:hover {
     display: block;
 }
 .hover_links:hover {
-    background-color: #ff364036;
+    background-color: #b6242836;
     font-size: 1.4rem;
 }
 .dropdown {
@@ -108,7 +108,7 @@ header .hover_headings:hover {
     min-width: 280px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    border-top: 4px solid #ff3640;
+    border-top: 4px solid #b62428;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
@@ -121,7 +121,7 @@ header .hover_headings:hover {
 }
 header .green_button {
     letter-spacing: 0.1rem;
-    background: #ff3640;
+    background: #b62428;
     border: none;
     color: white;
     font-size: 2rem;
@@ -184,7 +184,7 @@ header .page_padding {
     text-shadow: 0px 4px 12px rgba(0, 0, 0, 1);
 }
 .first_section .green_button {
-    background: #ff3640;
+    background: #b62428;
     border: none;
     color: white;
     font-size: 2rem;
@@ -220,7 +220,7 @@ header .page_padding {
     /* width: 50%; */
     /* margin: 20px; */
     flex: 7;
-    background-color: pink;
+    /* background-color: pink; */
 }
 .hover_image_container {
     flex: 3;
@@ -230,7 +230,7 @@ header .page_padding {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 .about_images {
     /* margin: 40px 0px 20px 40px; */
@@ -251,7 +251,7 @@ header .page_padding {
     top: 30%;
 }
 .about_us_img3 {
-    background: pink;
+    /* background: pink; */
     left: 7%;
     bottom: 2%;
 }
@@ -284,7 +284,7 @@ header .page_padding {
     display: flex;
     align-items: center;
     color: white;
-    background-color: #ff3640;
+    background-color: #b62428;
     justify-content: center;
 }
 .has_served h2 {
@@ -407,7 +407,7 @@ section.subscription {
 }
 .subscription-h {
     color: white;
-    background-color: #ff3640;
+    background-color: #b62428;
 }
 .subscription-h h2 {
     text-align: center;
@@ -696,7 +696,7 @@ footer .nav_links li a:not(.nav_links-last) {
 
     .has_served {
         font-size: 3.7rem;
-        background-color: #ff3640;
+        background-color: #b62428;
         /* height: 100px; */
     }
 
@@ -750,7 +750,7 @@ footer .nav_links li a:not(.nav_links-last) {
 
     .has_served {
         font-size: 3rem;
-        background-color: #ff3640;
+        background-color: #b62428;
         /* height: 100px; */
     }
 
@@ -886,7 +886,7 @@ footer .nav_links li a:not(.nav_links-last) {
     .burger_icon > * {
         width: 35px;
         height: 5px;
-        background-color: #ff3640;
+        background-color: #b62428;
         margin: 6px 0;
     }
     .burger_icon {
@@ -976,7 +976,7 @@ footer .nav_links li a:not(.nav_links-last) {
         flex: 1;
     }
     .served_over-big-left {
-        background-color: #ff3640;
+        background-color: #b62428;
         flex: 1;
         min-height: 0px;
         font-size: 2rem;
@@ -1275,7 +1275,7 @@ footer .nav_links li a:not(.nav_links-last) {
     font-weight: 500;
     padding: 3rem 0;
     color: white;
-    background-color: #ff3640;
+    background-color: #b62428;
     font-family: "Lato", sans-serif;
     background-clip: border-box;
 }
@@ -1284,7 +1284,7 @@ footer .nav_links li a:not(.nav_links-last) {
     font-size: 3rem;
     font-weight: 500;
     color: white;
-    background: #ff3640;
+    background: #b62428;
     height: 40px;
     margin: 3rem 0 2rem 0;
     display: inline-block;
@@ -1367,17 +1367,17 @@ footer .nav_links li a:not(.nav_links-last) {
 .box_styling_link {
     /* margin: 10px; */
     font-size: 1.4rem;
-    color: #ff3640;
+    color: #b62428;
 }
 .box_styling_1 {
-    background: url("../IMG/gallery/1.jpg") no-repeat center center/cover;
+    background: url("../IMG/gallery/17.jpg") no-repeat center center/cover;
 }
 .box_styling_2 {
-    background: url("../IMG/gallery/2.jpg") no-repeat center center/cover;
+    background: url("../IMG/gallery/12.jpg") no-repeat center center/cover;
     /* opacity: .7; */
 }
 .box_styling_3 {
-    background: url("../IMG/gallery/3.jpg") no-repeat center center/cover;
+    background: url("../IMG/gallery/1.jpg") no-repeat center center/cover;
     /* opacity: .7; */
     /* justify-content: end; */
 }

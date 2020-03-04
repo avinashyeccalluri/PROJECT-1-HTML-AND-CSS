@@ -1,8 +1,8 @@
 //  Gallery
 function mygallery() {
-    let galleryFolderPath = "../IMG/gallery/";
+    let galleryFolderPath = "../IMG/wkd/";
     let imgExt = ".jpg";
-    let totalGalleryImages = 23;
+    let totalGalleryImages = 35;
     let interval = 2000;
     imageSwapper(".one_row", galleryFolderPath, imgExt, totalGalleryImages, interval);
 }
