@@ -1263,7 +1263,7 @@ footer .nav_links li a:not(.nav_links-last) {
     line-height: 2rem;
 }
 .left_nav_topics_container ul li:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(247, 247, 247);
 }
 .the_content:not(:last-child) {
     padding-bottom: 1rem;
@@ -1309,7 +1309,7 @@ footer .nav_links li a:not(.nav_links-last) {
     height: 300px;
     width: 400px;
 }
-#anatomy .contents_image {
+#avinash .contents_image {
     background: url("../IMG/Contents/2610_The_Kidney_revised.png") no-repeat center center/contain;
 }
 #kidney_working .contents_image {
