@@ -214,9 +214,7 @@ header .page_padding {
     transition: all 0.2s ease-out;
 }
 .container_box_styling:hover {
-    /* width: 350px; */
-    transform: scale(1.5);
-    /* top: -50px; */
+    transform: scale(1.05);
 }
 .image_box_styling {
     height: 50%;
