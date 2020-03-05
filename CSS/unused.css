@@ -1,0 +1,131 @@
+/* SECTION - SERVED OVER */
+/* section.served_over {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+}
+.served_over-big {
+    display: flex;
+    flex: 3;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+.served_over-big-left {
+    background-color: #4bdb7b;
+    flex: 4;
+    min-height: 400px;
+    font-size: 4.5rem;
+    color: #fdfdfd;
+    padding: 0.5em;
+    text-transform: uppercase;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.288);
+    box-shadow: 5px 5px 6px rgba(97, 97, 97, 0.425);
+} */
+/* .served_over-big-left .the_count {
+    font-size: 2em;
+    color: #232323;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+} */
+/* .served_over-big-right {
+    background-color: white;
+    flex: 7;
+    margin-left: 8em;
+    display: flex;
+    flex-direction: column;
+} */
+/* .served_over-big-right h3 {
+    font-size: 4em;
+    font-weight: 600;
+    text-transform: uppercase;
+} */
+/* .served_over-big-right p:first-of-type {
+    font-size: 2em;
+    font-style: italic;
+    margin-bottom: 1em;
+    letter-spacing: 0.15rem;
+}
+.served_over-big-right p:last-of-type {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1em;
+}
+.served_over-big-right button {
+    width: 30rem;
+    padding: 1rem 3rem;
+    border: none;
+    background: none;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.56);
+} */
+/* .served_over-small {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    background: #dcdcdc;
+}
+.served_over-small-icon_link {
+    text-align: center;
+    padding: 2rem 0;
+}
+.served_over-small-icon_link .card_image {
+    padding: 0 2rem 2rem 2rem;
+}
+.served_over-small-icon_link img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.served_over-small-icon_link .card_title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+} */
+
+/* SECTION - SUBSCRIPTION */
+.subscription-form_container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.subscription-form_container form {
+    display: flex;
+    justify-content: center;
+}
+.subscription-form_container form .inputs {
+    display: flex;
+    flex-direction: column;
+}
+.subscription-form_container form .inputs input {
+    font-size: 2rem;
+    font-weight: 400;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0 0 5px 5px;
+    margin-bottom: 20px;
+    width: 150%;
+}
+.subscription-form_container form .inputs input::placeholder {
+    font-size: 1.8rem;
+}
+.subscription-form_container .submit_button {
+    display: flex;
+    align-items: center;
+    margin-left: 20rem;
+}
+.subscription-form_container button {
+    /* width: 40rem; */
+    padding: 1.5rem 3rem;
+    border: none;
+    background: none;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.56);
+}
