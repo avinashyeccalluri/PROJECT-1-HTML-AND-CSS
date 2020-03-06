@@ -34,10 +34,26 @@ function imageSwapper(selector, path, ext, totalCount, interval) {
     }, interval);
 }
 
-if (document.querySelector(".first_section")) {
-    carousel();
-    mygallery();
+if($(window).width() <= 699){
+    $('.hover_headings').on('click', (e)=>{
+        console.log(e.target.parentElement.nextElementSibling);
+        if(e.target.parentElement.nextElementSibling.classList.contains('new')){
+            e.target.parentElement.nextElementSibling.classList.remove('new');
+        e.target.parentElement.nextElementSibling.setAttribute('style','display:none');
+        }else{
+            e.target.parentElement.nextElementSibling.classList.add('new');
+        e.target.parentElement.nextElementSibling.setAttribute('style','display:block');
+        }
+        
+    });
 }
+
+
+
+// if (document.querySelector(".first_section")) {
+//     carousel();
+//     mygallery();
+// }
 
 function myFunction() {
     let x = document.getElementsByClassName("navBarContainer");
